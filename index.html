@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Space Shooter Game - WebGL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="canvas-container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="game-ui">
+            <div id="score">Score: 0</div>
+            <div id="lives">Lives: 3</div>
+            <div id="level">Level: 1</div>
+            <div id="highScore">High Score: 0</div>
+        </div>
+        <div id="powerupStatus"></div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="screen start-screen">
+        <h1 class="game-title">Space Shooter Game</h1>
+        <button id="startButton" class="menu-button">Start Game</button>
+        <button id="highScoresButton" class="menu-button">High Score</button>
+    </div>
+
+    <!-- Pause Screen -->
+    <div id="pauseOverlay" class="pause-overlay"></div>
+    <div id="pauseScreen" class="pause-screen">
+        <h2 class="pause-title">Game Paused</h2>
+        <button id="resumeButton" class="menu-button">Resume</button>
+        <button id="restartFromPause" class="menu-button">Start Again</button>
+        <button id="mainMenuFromPause" class="menu-button">Main Menu</button>
+    </div>
+
+
+    <!-- Game Over Screen -->
+    <div id="gameOverScreen" class="screen" style="display: none;">
+        <div class="game-over-content">
+            <h1 class="game-over-title">Game Over!</h1>
+            <div id="finalScore" class="score-display">Score: 0</div>
+            <div id="finalHighScore" class="high-score-display">High Score: 0</div>
+            <div>
+                <button id="restartButton" class="menu-button">Play Again</button>
+                <button id="mainMenuButton" class="menu-button">Main Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
